@@ -8,7 +8,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    
+
     <!-- links -->
      <link rel="stylesheet" href="css/all.min.css">
     <!-- Bootstrap CSS v5.2.1 -->
@@ -23,7 +23,7 @@
 
   <body>
     <!-- nav start -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light" id="nav">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="svg/logo.svg" alt="logo" /></a>
         <button
@@ -54,15 +54,20 @@
               <a class="nav-link" href="#">Shop</a>
             </li>
           </ul>
-          <form class="d-flex my-2 my-lg-0">
-            <input
-              class="form-control me-sm-2"
-              type="text"
-              placeholder="Search"
-            />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="search">
-            </button>
-          </form>
+          <div class="search-cart">
+            <form class="d-flex">
+              <input
+                class="form-control me-sm-2"
+                type="text"
+                placeholder="Search"
+              />
+              <button class="btn" type="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="cart">
+              <i class="fa-solid fa-cart-plus"></i>
+              <span class="cartnmbr">2</span>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
